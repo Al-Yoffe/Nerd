@@ -1,0 +1,562 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,500,300,900&subset=latin,cyrillic);
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif
+}
+
+hr {
+	border: 1px solid #f1f1f1;
+}
+
+.layout-centre {
+	margin: 0 auto;
+	width: 880px;
+}
+
+.layout-left-col {
+	float: left;
+	margin-right: 80px;
+	width: 240px;
+}
+
+.layout-right-col {
+	float: right;
+	width: 560px;
+}
+
+header {
+	background-color: #eee
+}
+
+header a {
+	color: #000;
+	text-decoration: none;
+}
+
+nav {
+	height: 100px;
+	text-transform: uppercase;
+}
+
+.logo {
+	background: url("../img/logo.png") no-repeat;
+	float: left;
+	height: 56px;
+	margin: 25px 178px 0 0;
+	width: 139px;
+}
+
+.main-menu {
+	float: left
+}
+
+.main-menu a {
+	float: left;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	list-style: none;
+	margin: 58px 42px 0 0;
+}
+
+.main-menu a:last-child {
+	margin: 58px 0 0 -7px
+}
+
+.cart {
+	float: right;
+	font-size: 14px;
+	font-weight: bold;
+	letter-spacing: 0.05em;
+	margin: 58px 0 0 0;
+}
+
+.cart:before {
+	background: url("../img/sprites.png") no-repeat 0 -200px;
+	content: "";
+	display: inline-block;
+	height: 13px;
+	position: relative;
+	right: 10px;
+	top: 0;
+	width: 16px;
+}
+
+.tagline {
+	float: left;
+	margin: 55px 0 0 0;
+	width: 400px;
+}
+
+.tagline h2 {
+	font-size: 36px;
+	font-weight: 500;
+	letter-spacing: 0.025em;
+	line-height: 1em;
+}
+
+.tagline a {
+	margin-top: 30px;
+	width: 240px;
+}
+
+.tagline p {
+	color: #283136;
+	font-size: 16px;
+	font-weight: 300;
+	margin-top: 20px;
+}
+
+.controls {
+	float: left;
+	position: relative;
+	top: 228px;
+}
+
+.controls input[type="radio"]:checked + label:before {
+	background-position: 0 0
+}
+
+.controls label:before {
+	background: url("../img/controls.png") no-repeat 0 -50px;
+	content: '';
+	display: inline-block;
+	height: 10px;
+	margin: 3px;
+	width: 10px;
+}
+
+.controls input {
+	display: none
+}
+
+.slider img {
+	float: right;
+	margin: 35px 0 70px 0;
+}
+
+.services {
+	margin: 80px 0
+}
+
+.services-order {
+	float: left;
+	height: 300px;
+	margin-right: 80px;
+	position: relative;
+	width: 240px;
+}
+
+.services-order:nth-last-of-type(1) a {
+	background-color: #efc84a
+}
+
+.services-order:nth-last-of-type(2) a {
+	background-color: #00ca74
+}
+
+.services-order:last-child {
+	margin-right: 0
+}
+
+.services-order h3 {
+	margin: 20px 0 18px 0;
+	text-transform: uppercase;
+}
+
+.services-order p {
+	color: #283136;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+.services-order a {
+	bottom: 0;
+	position: absolute;
+}
+
+.about-us {
+	margin: 50px 0
+}
+
+.about-us img {
+	float: right;
+	margin-right: 0;
+	margin-top: 30px;
+	width: 240px;
+}
+
+.about-us h2 {
+	font: 500 37px/1em 'Roboto', sans-serif;
+	letter-spacing: 0.01em;
+	margin: 16px 0 0 0;
+}
+
+.about-us li {
+	color: #283136;
+	font: 300 16px 'Roboto', sans-serif;
+	list-style: none;
+	margin: 0 0 23px 0;
+}
+
+.about-us li:before {
+	background-color: #fb565a;
+	bottom: 4px;
+	content: '';
+	display: inline-block;
+	height: 2px;
+	margin-right: 10px;
+	position: relative;
+	right: 1px;
+	width: 25px;
+}
+
+.about-us h3 {
+	font: 500 16px 'Roboto', sans-serif;
+	margin: 46px 0 23px 0;
+	text-transform: uppercase;
+}
+
+.about-us p {
+	color: #283136;
+	font-size: 16px;
+	font-weight: 300;
+	margin: 18px 0 0 0;
+}
+
+.about-us > * {
+	float: left;
+	margin-right: 80px;
+	width: 560px;
+}
+
+.studio {
+	margin: 40px 0 35px 0
+}
+
+.studio a {
+	display: table-cell;
+	float: left;
+	height: 90px;
+	margin-right: 100px;
+	text-align: right;
+	vertical-align: top;
+	width: 220px;
+}
+
+.studio a:nth-of-type(1) {
+	background: url("../img/Glukhanko-logo.png") no-repeat right
+}
+
+.studio a:nth-of-type(3) {
+	background: url("../img/barbershop-logo.png") no-repeat right
+}
+
+.studio a:nth-of-type(2) {
+	background: url("../img/HTML-Academy.png") no-repeat right
+}
+
+.studio a:last-child {
+	margin-right: 0
+}
+
+.btn {
+	background-color: #fb565a;
+	border-radius: 3px;
+	color: #fff;
+	display: inline-block;
+	font-size: 12px;
+	font-weight: 500;
+	height: 38px;
+	line-height: 38px;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 140px;
+}
+
+.market {
+	margin-top: 73px
+}
+
+.range-slider {
+	background: url("../img/range-slider.jpg");
+	height: 81px;
+	margin: 18px 0 0 0;
+	width: 240px;
+}
+
+.filter h3 {
+	font: 500 19px 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+.filter-cost-items {
+	text-align: center
+}
+
+.filter-cost-items label {
+	color: #283136;
+	font: 300 16px 'Roboto', sans-serif;
+	text-transform: uppercase;
+}
+
+.filter-cost-items input {
+	background-color: #f1f1f1;
+	border: 0;
+	border-radius: 3px;
+	color: #283136;
+	display: inline-block;
+	font: 300 16px 'Roboto', sans-serif;
+	height: 38px;
+	margin: 13px 12px 0 4px;
+	text-align: center;
+	width: 80px;
+}
+
+.filter-cost-items input:last-child {
+	margin: 13px 0 0 8px
+}
+
+.grid {
+	margin-top: 46px
+}
+
+.grid label {
+	display: inline-block;
+	margin-bottom: 16px;
+	margin-left: 10px;
+}
+
+.grid h3 {
+	margin-bottom: 16px
+}
+
+input[type="checkbox"], input[type="radio"] {
+	display: none
+}
+
+.filter-grid-items label:before {
+	background: url("../img/sprites.png") no-repeat 0 -150px;
+	content: '';
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	right: 10px;
+	top: 4px;
+	width: 20px;
+}
+
+.filter-grid-items input[type="radio"]:checked + label:before {
+	background-position: 0 -100px
+}
+
+.features {
+	margin: 30px 0 0 0
+}
+
+.features label {
+	display: inline-block;
+	margin: 0 0 16px 10px;
+}
+
+.features h3 {
+	margin-bottom: 15px
+}
+
+.filter-features-items label:before {
+	background: url("../img/sprites.png") no-repeat 0 -50px;
+	content: '';
+	display: inline-block;
+	height: 20px;
+	position: relative;
+	right: 10px;
+	top: 4px;
+	width: 20px;
+}
+
+.filter-features-items input[type="checkbox"]:checked + label:before {
+	background-position: 0 0
+}
+
+.switcher {
+	font: 500 12px 'Roboto', sans-serif;
+	list-style: none;
+	margin-top: 4px;
+}
+
+.switcher .act:after {
+	background: url("../img/arrow-d.png") no-repeat;
+	content: '';
+	display: inline-block;
+	height: 9px;
+	position: relative;
+	right: 10px;
+	width: 9px;
+}
+
+.switcher li {
+	float: left;
+	margin-right: 35px;
+	text-transform: uppercase;
+}
+
+.switcher-items a {
+	color: #000;
+	margin-right: 10px;
+	text-decoration: none;
+}
+
+.screenshots-items a {
+	background: url("../img/window.png") no-repeat top;
+	display: inline-block;
+	height: 270px;
+	margin: 23px 0 53px 0;
+	position: relative;
+	width: 240px;
+}
+
+.screenshots-items a:nth-of-type(2n-1) {
+	margin-right: 76px
+}
+
+.screenshots-items a img {
+	bottom: 0;
+	position: absolute;
+}
+
+.pagination ul {
+	list-style: none
+}
+
+.pagination a {
+	background-color: #f1f1f1;
+	box-sizing: border-box;
+	color: #000;
+	float: left;
+	height: 38px;
+	margin: 22px 10px 0 0;
+	text-decoration: none;
+	width: 38px;
+}
+
+.pagination .p-active {
+	background-color: #fff;
+	border: 2px solid #f1f1f1;
+	line-height: 34px;
+}
+
+.pagination .p-next {
+	text-transform: uppercase;
+	width: 140px;
+}
+
+.map {
+	background: url("../img/map.jpg") no-repeat;
+	height: 414px;
+	margin: 80px auto 0 auto;
+	position: relative;
+	width: 1280px;
+}
+
+.map .contacts {
+	background-color: #fff;
+	height: 210px;
+	left: 200px;
+	padding: 28px 20px 0 20px;
+	position: absolute;
+	top: 90px;
+	width: 200px;
+}
+
+.map .contacts address {
+	color: #283136;
+	font: normal 300 16px 'Roboto', sans-serif;
+	margin: 15px 0 0 0;
+}
+
+.map .contacts span {
+	display: inline-block;
+	margin: 18px 0 0 0;
+}
+
+.map .contacts h3 {
+	font: normal 300 16px 'Roboto', sans-serif;
+	letter-spacing: 0.016em;
+}
+
+.map .contacts a {
+	margin: 30px 0 0 2px;
+	width: 195px;
+}
+
+footer {
+	height: 216px;
+	margin: 0 auto;
+	width: 900px;
+}
+
+footer h2 {
+	font: normal 500 36px 'Roboto', sans-serif;
+	letter-spacing: 0.02em;
+	margin-top: 70px;
+}
+
+footer p {
+	color: #283136;
+	font-weight: 300;
+	margin-top: 5px;
+}
+
+.social-buttons {
+	float: left;
+	list-style: none;
+	margin-left: 10px;
+	margin-top: 80px;
+}
+
+.social-buttons .social-insta {
+	background-position: 22px -328px
+}
+
+.social-buttons .social-fb {
+	background-position: 25px -280px
+}
+
+.social-buttons .social-vk {
+	background-position: 25px -227px
+}
+
+.social-buttons li {
+	float: left;
+	margin-right: 28px;
+}
+
+.social-buttons a {
+	background: url("../img/sprites.png") no-repeat, #f1f1f1;
+	border-radius: 50%;
+	display: block;
+	height: 62px;
+	width: 62px;
+}
+
+.layout-footer {
+	float: right;
+	width: 570px;
+}
+
+/*Helper classes*/
+
+.clearfix:before, .clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both
+}
